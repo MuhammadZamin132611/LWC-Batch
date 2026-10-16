@@ -1,0 +1,13 @@
+h1 {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    background-color: yellow;
+    color: #000;
+}
+
+.header {
+    position: relative;
+}

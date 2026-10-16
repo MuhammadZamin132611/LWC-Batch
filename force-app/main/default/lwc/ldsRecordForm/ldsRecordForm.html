@@ -1,0 +1,27 @@
+<template>
+    <lightning-card variant="Narrow" title="LDS Record Form" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <lightning-record-form record-id="001HF00000O2TL8YAN" object-api-name="Account" columns="2" mode="view"
+                fields={fields} onsuccess={handleSuccess} onerror={handleError} onsubmit={handleSubmit}
+                oncancel={handleCancel} onload={handleLoad}>
+            </lightning-record-form>
+        </div>
+        <div>
+            <lightning-record-edit-form record-id="001HF00000O2TL8YAN"  object-api-name="Account">
+                <lightning-input-field field-name="Name"></lightning-input-field>
+                <lightning-input-field field-name="Industry"></lightning-input-field>
+                <lightning-input-field field-name="Phone"></lightning-input-field>
+                <lightning-input-field field-name="ParentId"></lightning-input-field>
+                <lightning-button variant="brand" type="submit" value="Submit" label="Submit"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+        <div>
+            <lightning-record-view-form record-id="001HF00000O2TL8YAN" object-api-name="Account">
+                <lightning-output-field field-name="Name"></lightning-output-field>
+                <lightning-output-field field-name="Industry"></lightning-output-field>
+                <lightning-output-field field-name="Phone"></lightning-output-field>
+                <lightning-output-field field-name="Type"></lightning-output-field>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>

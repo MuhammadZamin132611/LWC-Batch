@@ -1,0 +1,6 @@
+<aura:component
+    implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+    access="global">
+    <lightning:button label="Send Payload" onclick="{! c.handleClick }"></lightning:button>
+    <lightning:messageChannel type="LwcTraning__c" aura:id="sampleMessageChannel" />
+</aura:component>

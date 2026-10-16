@@ -1,0 +1,11 @@
+@import 'c/cssLibrary';
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: blue;
+    font-size: larger;
+    font-style: italic;
+}

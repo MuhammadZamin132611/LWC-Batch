@@ -1,0 +1,34 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card title="User Form">
+            <div class="slds-p-around_large">
+                <lightning-input type="text" label="Name" onchange={handleName}
+                    placeholder="Enter your name"></lightning-input>
+                <lightning-input type="email" label="Email" onchange={handleEmail}
+                    placeholder="Enter your email"></lightning-input>
+                <lightning-input type="phone" label="Phone" onchange={handlePhone}
+                    placeholder="Enter your phone"></lightning-input>
+
+                <lightning-textarea type="text" label="Address" onchange={handleAddress}
+                    placeholder="Enter your address"></lightning-textarea>
+
+                <div class="slds-p-top_medium">
+                    <lightning-button variant="brand" onclick={handleSubmit} label="Submit"></lightning-button>
+                </div>
+            </div>
+            <template if:true={userData}>
+                <div class="slds-m-around_medium">
+                    <p>Name: {userData.name}</p>
+                    <p>Email: {userData.email}</p>
+                    <p>Phone: {userData.phone}</p>
+                    <p>Address: {userData.address}</p>
+                </div>
+            </template>
+            <template if:false={userData}>
+                <div class="slds-m-around_medium">
+                    <p>User not Submitted !!!</p>
+                </div>
+            </template>
+        </lightning-card>
+    </div>
+</template>

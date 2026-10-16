@@ -1,0 +1,24 @@
+<template>
+    <lightning-card variant="Narrow" title="Lds Created" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <!-- Account Form -->
+            <lightning-input type="text" variant="standard" name="Name" label="Account Name" required
+                onchange={handleAccountInputChange}></lightning-input>
+
+            <!-- Contact Form -->
+            <lightning-input type="text" variant="standard" name="FirstName" label="First Name" required
+                onchange={handleContactInputChange}></lightning-input>
+            <lightning-input type="text" variant="standard" name="LastName" label="Last Name" required
+                onchange={handleContactInputChange}></lightning-input>
+            <lightning-input type="email" variant="standard" name="Email" label="Email" required
+                onchange={handleContactInputChange}></lightning-input>
+            <lightning-textarea name="Description" label="Description" required
+                onchange={handleAccountInputChange}></lightning-textarea>
+        </div>
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand" label="Create Record" title="Create Record"
+                onclick={handleClick}></lightning-button>
+        </div>
+        <div slot="footer">Card Footer</div>
+    </lightning-card>
+</template>

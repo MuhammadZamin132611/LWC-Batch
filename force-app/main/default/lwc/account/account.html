@@ -1,0 +1,37 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card title="LWC: Account">
+            <div class="slds-p-around_large">
+
+                <a href="https://www.google.com/" onclick={hendleClick}>Click Me</a>
+
+                <lightning-input type="text" name="FirstName" label="First Name" title="First Name" required="true"
+                    placeholder="first name here..." onchange={hendleChange}></lightning-input>
+                <lightning-input type="text" name="LastName" label="Last Name" required="true" placeholder="last name here..."
+                    onchange={hendleChange}></lightning-input>
+                <lightning-input type="email" name="Email" label="Email" required="true" placeholder="email here..."
+                    onchange={hendleChange}></lightning-input>
+                <lightning-input type="number" name="NoOfEmployees__c" label="No of Employees" required="true" onchange={hendleChange}></lightning-input>
+                <lightning-input type="number" name="Revenue__c" formatter="currency" step="0.001" label="Revenue"
+                    required="true" onchange={hendleChange}></lightning-input>
+                <lightning-input type="date" name="Due_Date__c" label="Due Date" required="true" onchange={hendleChange}></lightning-input>
+                <lightning-input type="checkbox" name="Completed__c" label="Completed?" checked="true"
+                    required="true" onchange={hendleChange}></lightning-input>
+
+                <lightning-combobox name="Status__c" label="Status" placeholder="Select Progress" options={options}
+                    onchange={hendleChange}></lightning-combobox>
+
+                <lightning-button variant="brand" label="Create Account" title="Create Account"
+                    onclick={handleCreateAccount}></lightning-button>
+
+                <!--<lightning-input-name label="Full Name"></lightning-input-name>
+
+                <lightning-input-address address-label="Address" street-label="Street" city-label="City"
+                    country-label="Country" province-label="Province" postal-code-label="PostalCode"
+                    street="121 Spear St." city="San Francisco" country="US" province="CA" postal-code="94105" required
+                    field-level-help="Help Text for inputAddress field"></lightning-input-address> -->
+
+            </div>
+        </lightning-card>
+    </div>
+</template>

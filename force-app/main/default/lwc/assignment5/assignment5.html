@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card variant="Narrow" title="Assignment #5" icon-name="standard:account">
+            <div class="slds-p-horizontal_small">
+                <lightning-datatable key-field="Id" data={userData} columns={columnsList} max-row-selection="1"
+                    onrowselection={handleRowSelection}>
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+    </div>
+</template>

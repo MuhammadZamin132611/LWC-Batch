@@ -1,0 +1,16 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <p class="parent-container">
+                Parent {Id}
+            </p>
+            <p>
+                <lightning-button variant="brand" label="Change Visibility" title="Change Visibility" onclick={handleClick}></lightning-button>
+            </p>
+            <p if:true={showChild}>
+                <c-child-hook greeting={greeting}></c-child-hook>
+            </p>
+        </div>
+        <div slot="footer">Card Footer</div>
+    </lightning-card>
+</template>

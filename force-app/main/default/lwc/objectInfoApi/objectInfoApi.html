@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Object Info Api" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <lightning-combobox
+                name="progress"
+                label={label}
+                options={industryOption} 
+                onchange={handleChange}></lightning-combobox>
+        </div>
+        <div slot="footer">{footer}</div>
+    </lightning-card>
+</template>

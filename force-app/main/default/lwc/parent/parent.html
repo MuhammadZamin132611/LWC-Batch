@@ -1,0 +1,23 @@
+<template>
+    <!-- Shadow Root -->
+    <div class="slds-m-around_large">
+        <lightning-card variant="Narrow" title="Parent Component" icon-name="standard:account">
+            <div class="slds-p-horizontal_small">
+                <p>Parent Component</p>
+                <lightning-button variant="brand" onclick={handleClicked} label="Call Child Method"></lightning-button>
+                <c-child users={users}>
+                    <!-- Shadow Root -->
+                    <p>I am from Parent Component</p>
+                    <p slot="order">Named Slot</p>
+                </c-child>
+                <!-- <p>
+                    <a href="https://www.youtube.com/" target="_blank" onclick={handleUrlClicked}>Visit YouTube</a>
+                </p>
+                <p>
+                    <a href="mailto:example@example.com" target="_blank">Send Email</a>
+                </p> -->
+                <!-- Use Child Component -->
+            </div>
+        </lightning-card>
+    </div>
+</template>

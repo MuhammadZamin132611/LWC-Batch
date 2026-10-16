@@ -1,0 +1,10 @@
+<template>
+    <lightning-card variant="Narrow" title="Account List" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <lightning-datatable key-field="Id" data={data} columns={columnsList} onrowaction={handleRowAction}
+                max-row-selection="3" onrowselection={handleRowSelection} draft-values={draftValues} onsave={handleSave}
+                oncancel={handleCancel}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

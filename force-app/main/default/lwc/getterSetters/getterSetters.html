@@ -1,0 +1,16 @@
+<template>
+    <lightning-card variant="Narrow" title="Getter Setters" icon-name="standard:account">
+        <div class="slds-p-around_large">
+            <p>
+                {name}
+            </p>
+            <p>
+                {welcomeMessage}
+            </p>
+        </div>
+        <div class="slds-p-around_large">
+            <lightning-button label="Change Name" title="Change Name" onclick={handleClick}></lightning-button>
+        </div>
+        <div slot="footer">Card Footer</div>
+    </lightning-card>
+</template>

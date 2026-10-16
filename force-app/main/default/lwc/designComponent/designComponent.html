@@ -1,0 +1,23 @@
+<template>
+    <lightning-card variant="Narrow" title="Design Component" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <p>Object API Name: {objectApiName}</p>
+            <p>Field API Name: {fieldApiName}</p>
+            <p>Number of Contacts: {noOfRecords}</p>
+            <p>Record ID: {recordId}</p>
+        </div>
+        <div class="slds-p-horizontal_small">
+            <lightning-input type="text" variant="standard" name="First Name" label="First Name"
+                placeholder="type here..."></lightning-input>
+            <lightning-input type="text" variant="standard" name="Last Name" label="Last Name"
+                placeholder="type here..."></lightning-input>
+            <lightning-input type="email" variant="standard" name="Email" label="Email"
+                placeholder="type here..."></lightning-input>
+        </div>
+        <div class="slds-p-horizontal_small">
+            <lightning-button variant="brand" label="Create Contact" title="Create Contact" onclick={handleClick}
+                class="slds-m-top_small"></lightning-button>
+        </div>
+        <div slot="footer">Card Footer</div>
+    </lightning-card>
+</template>

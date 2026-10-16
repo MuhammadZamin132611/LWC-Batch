@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card variant="Narrow" title="Assignment #1" icon-name="standard:note">
+            <div class="slds-p-around_large">
+                <lightning-combobox name="progress" label="Task Priority" value={value} placeholder="Select Progress"
+                    options={options} onchange={handleChange}></lightning-combobox>
+                <div class="slds-p-top_small">
+                    <lightning-button variant="brand" label="Add To List" onclick={handleClick}></lightning-button>
+                </div>
+            </div>
+            <template if:true={isVisible}>
+                <h1 class="slds-p-around_large slds-text-heading_medium">To DO
+                    LIST</h1>
+                <template for:each={toDoList} for:item="list">
+                    <div key={list.index} class="slds-p-top_none slds-p-around_large">
+                        <div class="slds-grid">
+                            <lightning-icon icon-name="standard:labels" alternative-text="Doc image"></lightning-icon>
+                            <div>
+                                <p class="slds-p-left_small">{list}</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </lightning-card>
+    </div>
+</template>

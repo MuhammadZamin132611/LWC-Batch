@@ -1,0 +1,48 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card title="User Form">
+            <div class="slds-p-around_large">
+                <div class="slds-p-bottom_medium">
+                    <lightning-button variant="brand" onclick={handleSubmit} label="Click Me"></lightning-button>
+                </div>
+                <div if:true={showTom}>
+                    I am tom
+                </div>
+                <div if:false={showTom}>
+                    I am jerry
+                </div>
+
+                <template lwc:if={showTom}>
+                    I am tom
+                </template>
+                <template lwc:elseif={showJerry}>
+                    I am jerry
+                </template>
+                <template lwc:else>
+                    I am Dog
+                </template>
+
+                <template for:each={users} for:item="user" for:index="index">
+                    <div class="slds-m-around_large" key={user.name}>
+                        {index} - {user.name}, {user.email}
+                    </div>
+                    <div class="slds-m-around_large" key={user.email}>
+                        <li>I am inside Paragraph</li>
+                    </div>
+                </template>
+
+                <template iterator:user={users}>
+                    <div class="slds-m-around_large" key={user.value.name}>
+                        <div if:true={user.first} class="">
+                            <hr>
+                        </div>
+                        {user.index} - {user.value.name}, {user.value.email}
+                        <div if:true={user.last} class="">
+                            <hr>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+</template>

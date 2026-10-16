@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card title="Button Click">
+            <div class="slds-p-around_large">
+                <lightning-button variant="brand" label="Click Button 1" onclick={handleButton1}></lightning-button>
+                <lightning-button class="slds-p-left_medium" variant="brand" label="Click Button 2" onclick={handleButton2}></lightning-button>
+                <p class="slds-p-top_medium">{buttonLabel}</p>
+            </div>
+        </lightning-card>
+    </div>
+</template>

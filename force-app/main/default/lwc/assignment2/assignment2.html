@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card variant="Narrow" title="Assignment #2" icon-name="standard:note">
+            <div class="slds-p-around_large">
+                <lightning-input type="text" variant="standard" onchange={handleInput} name="FirstName" label="First Name" placeholder="Enter first name..."></lightning-input>
+                <lightning-input type="text" variant="standard" onchange={handleInput} name="lastName" label="Last Name" placeholder="Enter last name..."></lightning-input>
+                <lightning-input type="email" variant="standard" onchange={handleInput} name="email" label="Email" placeholder="Enter email..."></lightning-input>
+                <lightning-input type="phone" variant="standard" onchange={handleInput} name="phone" label="Phone" placeholder="Enter phone..."></lightning-input>
+                <lightning-input type="text" variant="standard" onchange={handleInput} name="title" label="Title" placeholder="Enter title..."></lightning-input>
+                <lightning-input type="text" variant="standard" onchange={handleInput} name="department" label="Department" placeholder="Enter department..."></lightning-input>
+                <div class="slds-p-top_small">
+                    <lightning-button variant="brand" label="Create Contact" onclick={handleClick}></lightning-button>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

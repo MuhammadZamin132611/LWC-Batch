@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card variant="Narrow" title="Parent One Component" icon-name="custom:custom65">
+            <div class="slds-p-horizontal_small">
+                <p>Parent One Component</p>
+                <p>
+                    <lightning-button variant="brand" label="Call Child Method" title="Call Child Method" onclick={handleClick}></lightning-button>
+                </p>
+                <p>
+                    <c-childone onsuccess={handleChildEvent}></c-childone>
+                    <!-- <c-childone onsuccess={handleChildEvent}></c-childone> -->
+                </p>
+            </div>
+            <div slot="footer">Parent to Child</div>
+        </lightning-card>
+    </div>
+</template>

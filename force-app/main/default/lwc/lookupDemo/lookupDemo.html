@@ -1,0 +1,12 @@
+<template>
+    <lightning-card variant="Narrow" title="Lookup Demo" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <c-lookup label="Contact Name" obj-api-name="Contact" onlookup={handleLookup} icon-name="standard:contact" object-label="Contact"
+                field-to-search="Name" parent-id-field="ContactId"></c-lookup>
+        </div>
+        <div class="slds-p-horizontal_small">
+            <c-lookup label="Account Name" obj-api-name="Account" onlookup={handleLookup} icon-name="standard:account" object-label="Contact"
+                field-to-search="Name" parent-id-field="AccountId"></c-lookup>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card variant="Narrow" title="Child Component" icon-name="standard:contact">
+            <lightning-button slot="actions" variant="brand" label="Click Me" title="Click Me"
+                onclick={handleClick}></lightning-button>
+            <div class="slds-p-around_large">
+                <p>
+                    Child Component Slots
+                </p>
+                <div class="slds-p-horizontal_small">
+                    <lightning-input message-when-value-missing="🔥Account Name is required" type="text"
+                        variant="label-stacked" label="Account Name" required="true"
+                        onchange={handleChange}></lightning-input>
+                    <lightning-input message-when-value-missing="🔥Account Email is required"
+                        message-when-bad-input="🔥Please provide the email in correct format" type="email"
+                        variant="label-stacked" label="Account Email" required="true"
+                        onchange={handleChange}></lightning-input>
+                </div>
+                <slot style="color: aqua;" onslotchange={handleSlotChange}></slot>
+                <slot name="order"></slot>
+
+                <lightning-button variant="brand" label="Change Users" onclick={handleClick}></lightning-button>
+            </div>
+        </lightning-card>
+    </div>
+</template>
