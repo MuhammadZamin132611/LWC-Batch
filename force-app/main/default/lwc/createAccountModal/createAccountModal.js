@@ -2,9 +2,6 @@ import { LightningElement, api } from "lwc";
 
 export default class CreateAccountModal extends LightningElement {
   @api content;
-  @api close(result) {
-    return Promise.resolve(result);
-  }
 
   handleClick(event) {
     event.preventDefault();
