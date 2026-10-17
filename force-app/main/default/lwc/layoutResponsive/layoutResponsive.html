@@ -1,0 +1,65 @@
+<template>
+  <lightning-card
+    variant="Narrow"
+    title="Layout Responsive"
+    icon-name="standard:account"
+  >
+    <lightning-button
+      slot="actions"
+      variant="brand"
+      label="Create New Account"
+      title="Create New Account"
+      onclick={handleClick}
+    ></lightning-button>
+
+    <div class="slds-p-horizontal_small">
+      <lightning-layout multiple-rows>
+        <lightning-layout-item
+          size="12"
+          padding="around-small"
+          small-device-size="12"
+          medium-device-size="6"
+          large-device-size="3"
+        >
+          <div class="custom-box">1</div>
+        </lightning-layout-item>
+        <lightning-layout-item
+          size="12"
+          padding="around-small"
+          small-device-size="12"
+          medium-device-size="6"
+          large-device-size="3"
+        >
+          <div class="custom-box">2</div>
+        </lightning-layout-item>
+        <lightning-layout-item
+          size="12"
+          padding="around-small"
+          small-device-size="12"
+          medium-device-size="6"
+          large-device-size="3"
+        >
+          <div class="custom-box">3</div>
+        </lightning-layout-item>
+        <lightning-layout-item
+          size="12"
+          padding="around-small"
+          small-device-size="12"
+          medium-device-size="6"
+          large-device-size="3"
+        >
+          <div class="custom-box">4</div>
+        </lightning-layout-item>
+        <lightning-layout-item
+          size="12"
+          padding="around-small"
+          small-device-size="12"
+          medium-device-size="6"
+          large-device-size="3"
+        >
+          <div class="custom-box">5</div>
+        </lightning-layout-item>
+      </lightning-layout>
+    </div>
+  </lightning-card>
+</template>

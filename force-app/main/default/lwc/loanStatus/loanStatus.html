@@ -1,0 +1,32 @@
+<template>
+  <lightning-card
+    variant="Narrow"
+    title="Lightning Progress Indicator"
+    icon-name="standard:account"
+  >
+    <p class="slds-p-horizontal_small">
+      <lightning-progress-indicator type="path" current-step={currentStep}>
+        <template
+          if:true={options}
+          for:each={options}
+          for:item="item"
+          for:index="index"
+        >
+          <lightning-progress-step
+            key={item.value}
+            label={item.label}
+            value={item.value}
+            onclick={handleItemClick}
+            onselect={handleItemClick}
+            onchange={handleItemClick}
+          ></lightning-progress-step>
+        </template>
+        <!-- <lightning-progress-step label="Step1" value="Step1"></lightning-progress-step>
+                <lightning-progress-step label="Step2" value="Step2"></lightning-progress-step>
+                <lightning-progress-step label="Step3" value="Step3"></lightning-progress-step> -->
+      </lightning-progress-indicator>
+    </p>
+  </lightning-card>
+</template>
+
+<!-- sfdx plugins:install @salesforce/lwc-dev-server -->
