@@ -3,16 +3,14 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>loanStatus</componentName>
-                <identifier>c_loanStatus</identifier>
+                <componentName>exceptionComponent</componentName>
+                <identifier>c_exceptionComponent</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>layoutResponsive</componentName>
-                <identifier>c_layoutResponsive</identifier>
-            </componentInstance>
-        </itemInstances>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentName>home:heroChart</componentName>
@@ -21,14 +19,30 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>home:eventContainer</componentName>
-                <identifier>home_eventContainer</identifier>
+                <componentName>home:recentRecordContainer</componentName>
+                <identifier>home_recentRecordContainer</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>home:recentRecordContainer</componentName>
-                <identifier>home_recentRecordContainer</identifier>
+                <componentName>home:topDealsContainer</componentName>
+                <identifier>home_topDealsContainer</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>home:assistant</componentName>
+                <identifier>home_assistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>resourceLoader</componentName>
+                <identifier>c_resourceLoader2</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -41,34 +55,16 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>home:topDealsContainer</componentName>
-                <identifier>home_topDealsContainer</identifier>
+                <componentName>home:eventContainer</componentName>
+                <identifier>home_eventContainer</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>resourceLoader</componentName>
-                <identifier>c_resourceLoader2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>lookupDemo</componentName>
-                <identifier>c_lookupDemo</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>home:assistant</componentName>
-                <identifier>home_assistant</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>main</name>
+        <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Home Page Default</masterLabel>
     <template>
-        <name>industries_common:homeTemplateOneRegion</name>
+        <name>runtime_alm_devops:homeDesktopTemplate</name>
     </template>
     <type>HomePage</type>
 </FlexiPage>
